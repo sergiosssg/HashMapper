@@ -31,5 +31,15 @@ namespace HashMapper
 
             return returnedSum;
         }
+
+
+        public static IEnumerable<Int32> StringToArrayOfBytes(string sourceString)
+        {
+
+
+
+
+            return null;
+        }
     }
 }

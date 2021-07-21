@@ -20,7 +20,7 @@ namespace HashMapper
             int amountOfElementsInArrayOfNumbers = 0;
 
 
-            foreach(var e0 in arrayOfNumbers) { amountOfElementsInArrayOfNumbers++; }
+            foreach(long e0 in arrayOfNumbers) { amountOfElementsInArrayOfNumbers++; }
 
 
             foreach (var el in arrayOfNumbers)

@@ -25,7 +25,8 @@ namespace HashMapper
 
             foreach (var el in arrayOfNumbers)
             {
-                returnedSum += (el & 0xFF) << bitesOfbyte * amountOfElementsInArrayOfNumbers--;
+                int bitesforShifting = bitesOfbyte * amountOfElementsInArrayOfNumbers--;
+                returnedSum += (el & 0xFF) << bitesforShifting;
             }
 
             return returnedSum;

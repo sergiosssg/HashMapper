@@ -36,11 +36,9 @@ namespace HashMapper
 
         public static IEnumerable<Int32> StringToArrayOfBytes(string sourceString)
         {
-
-
-
-
-            return null;
+            return Enumerable.Range(0, sourceString.Length)
+                             .Where(x => x % 2 == 0)
+                             .Select(x => Convert.ToInt32(sourceString.Substring(x, 2), 16));
         }
 
 

@@ -11,13 +11,21 @@ namespace HashMapper
          * 
          * 
          */
-        public static int SumOfBitees(long baseOfSumm, IEnumerable<Int32> arrayOfNumbers)
+        public static long SumOfBitees(long baseOfSumm, IEnumerable<Int32> arrayOfNumbers)
         {
-            int returnedSum = 0;
+            long returnedSum = 0L;
 
-            foreach(var el in arrayOfNumbers)
+            const int bitesOfbyte = 8;
+
+            int amountOfElementsInArrayOfNumbers = 0;
+
+
+            foreach(var e0 in arrayOfNumbers) { amountOfElementsInArrayOfNumbers++; }
+
+
+            foreach (var el in arrayOfNumbers)
             {
-                returnedSum += el;
+                returnedSum += (el & 0xFF) << bitesOfbyte * amountOfElementsInArrayOfNumbers--;
             }
 
             return returnedSum;

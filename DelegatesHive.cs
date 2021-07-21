@@ -23,7 +23,7 @@ namespace HashMapper
             foreach(long e0 in arrayOfNumbers) { amountOfElementsInArrayOfNumbers++; }
 
 
-            foreach (var el in arrayOfNumbers)
+            foreach (long el in arrayOfNumbers)
             {
                 int bitesforShifting = bitesOfbyte * amountOfElementsInArrayOfNumbers--;
                 returnedSum += (el & 0xFF) << bitesforShifting;

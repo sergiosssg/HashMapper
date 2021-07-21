@@ -42,6 +42,10 @@ namespace HashMapper
         }
 
 
+
+
+
+
         private static byte[] StringToByteArray(string hex)
         {
             return Enumerable.Range(0, hex.Length)

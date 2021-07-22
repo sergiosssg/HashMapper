@@ -15,8 +15,11 @@ namespace HashMapper
 
             testSum = DelegatesHive.SumOfBitees(testSum, testArray);
 
+            DateTime dtBeginingOfThisYear;
 
             DateTime dtNow = DateTime.Now;
+
+            int iYear = dtNow.Year;
 
             Console.WriteLine( dtNow.ToString("yy,MM,dd,HH,mm,ss"));
 

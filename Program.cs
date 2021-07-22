@@ -23,6 +23,11 @@ namespace HashMapper
 
             dtBeginingOfThisYear = new DateTime( iYear, 1, 1);
 
+            int iDayOfYearDtBeginingOfThisYear = dtBeginingOfThisYear.DayOfYear;
+            int iDayOfYearDtNow = dtNow.DayOfYear;
+
+            int dtDifference = iDayOfYearDtNow - iDayOfYearDtBeginingOfThisYear;
+
             Console.WriteLine( dtNow.ToString("yy,MM,dd,HH,mm,ss"));
 
             Console.WriteLine("Всё, Хеловорд!");

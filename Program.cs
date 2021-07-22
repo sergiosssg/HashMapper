@@ -21,6 +21,8 @@ namespace HashMapper
 
             int iYear = dtNow.Year;
 
+            dtBeginingOfThisYear = new DateTime( iYear, 1, 1);
+
             Console.WriteLine( dtNow.ToString("yy,MM,dd,HH,mm,ss"));
 
             Console.WriteLine("Всё, Хеловорд!");

@@ -16,6 +16,10 @@ namespace HashMapper
             testSum = DelegatesHive.SumOfBitees(testSum, testArray);
 
 
+            DateTime dtNow = DateTime.Now;
+
+            Console.WriteLine( dtNow.ToString("yy,MM,HH,hh,mm,ss"));
+
             Console.WriteLine("Всё, Хеловорд!");
         }
     }

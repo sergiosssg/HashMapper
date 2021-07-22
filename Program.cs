@@ -26,7 +26,9 @@ namespace HashMapper
             int iDayOfYearDtBeginingOfThisYear = dtBeginingOfThisYear.DayOfYear;
             int iDayOfYearDtNow = dtNow.DayOfYear;
 
-            int dtDifference = iDayOfYearDtNow - iDayOfYearDtBeginingOfThisYear;
+            int iDtDifference = iDayOfYearDtNow - iDayOfYearDtBeginingOfThisYear + 1;
+
+            int iSeconds = dtNow.Hour * 3600 + dtNow.Minute * 60 + dtNow.Second;
 
             Console.WriteLine( dtNow.ToString("yy,MM,dd,HH,mm,ss"));
 

@@ -30,7 +30,7 @@ namespace HashMapper
 
             int iSeconds = dtNow.Hour * 3600 + dtNow.Minute * 60 + dtNow.Second;
 
-            int iDtSecondsFromNewYear = iDtDifference + iSeconds;
+            long lDtSecondsFromNewYear = iDtDifference + iSeconds;
 
 
             Console.WriteLine( dtNow.ToString("yy,MM,dd,HH,mm,ss"));
